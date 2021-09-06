@@ -5,8 +5,8 @@
             "columns": 2,
             "fields": [
                 {
-                    "label": "App Key",
-                    "name": "app_id",
+                    "label": "Public Key",
+                    "name": "public_key",
                     "value": "",
                     "meta": {
                         "type": "input",
@@ -14,8 +14,8 @@
                     }
                 },
                 {
-                    "label": "Secret",
-                    "name": "secret",
+                    "label": "Private Key",
+                    "name": "private_key",
                     "value": "",
                     "meta": {
                         "type": "input",
