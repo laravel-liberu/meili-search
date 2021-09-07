@@ -11,8 +11,8 @@ class CreateMeilisearchSettingsTable extends Migration
         Schema::create('meilisearch_settings', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->string('public_key')->nullable();
-            $table->string('private_key')->nullable();
+            $table->string('public_key', 500)->nullable();
+            $table->string('private_key', 500)->nullable();
 
             $table->boolean('enabled');
 

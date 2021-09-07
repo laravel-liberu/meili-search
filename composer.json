@@ -1,7 +1,7 @@
 {
     "name": "laravel-enso/meilisearch",
     "type": "library",
-    "description": "",
+    "description": "meilisearch integration",
     "authors": [
         {
             "name": "Adrian Ocneanu",
