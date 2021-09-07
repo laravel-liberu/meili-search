@@ -5,17 +5,17 @@
             "columns": 2,
             "fields": [
                 {
-                    "label": "Public Key",
-                    "name": "public_key",
+                    "label": "Host",
+                    "name": "host",
                     "value": "",
                     "meta": {
                         "type": "input",
-                        "content": "encrypt"
+                        "content": "text"
                     }
                 },
                 {
-                    "label": "Private Key",
-                    "name": "private_key",
+                    "label": "Master Key",
+                    "name": "master_key",
                     "value": "",
                     "meta": {
                         "type": "input",

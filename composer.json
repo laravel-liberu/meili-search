@@ -1,5 +1,5 @@
 {
-    "name": "laravel-enso/meilisearch",
+    "name": "laravel-enso/meili-search",
     "type": "library",
     "description": "meilisearch integration",
     "authors": [
@@ -25,6 +25,7 @@
     "keywords": [],
     "homepage": "https://www.laravel-enso.com",
     "require": {
+        "http-interop/http-factory-guzzle": "^1.2",
         "php": ">=8.0",
         "meilisearch/meilisearch-php": "^0.19",
         "laravel-enso/core": "^7.0"

@@ -19,17 +19,31 @@ class Settings extends Model
 
     protected $casts = [
         'enabled' => 'boolean',
-        'public_key' => Encrypt::class,
-        'private_key' => Encrypt::class,
+        'master_key' => Encrypt::class,
     ];
 
     private static $instance;
+
+    public function configured(): bool
+    {
+        return $this->host !== null && $this->master_key !== null;
+    }
 
     public static function current()
     {
         return self::$instance
             ??= self::cacheGet(1)
             ?? self::factory()->create();
+    }
+
+    public static function host()
+    {
+        return self::current()->host;
+    }
+
+    public static function masterKey()
+    {
+        return self::current()->master_key;
     }
 
     public static function enabled()

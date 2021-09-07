@@ -12,8 +12,8 @@ class SettingsFactory extends Factory
     public function definition()
     {
         return [
-            'public_key' => null,
-            'private_key' => null,
+            'host' => null,
+            'master_key' => null,
             'enabled' => false,
         ];
     }
