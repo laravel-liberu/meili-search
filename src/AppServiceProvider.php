@@ -2,9 +2,8 @@
 
 namespace LaravelEnso\MeiliSearch;
 
-use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
-use LaravelEnso\MeiliSearch\Models\Settings;
+use LaravelEnso\MeiliSearch\Http\Middleware\MeiliSearch;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -12,11 +11,11 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+    }
 
-        if (Settings::enabled()) {
-            Config::set('scout.driver', 'meilisearch');
-            Config::set('scout.meilisearch.host', Settings::host());
-            Config::set('scout.meilisearch.key', Settings::masterKey());
-        }
+    public function register()
+    {
+        $this->app['router']
+            ->aliasMiddleware('meili-search', MeiliSearch::class);
     }
 }

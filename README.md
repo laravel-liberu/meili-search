@@ -1,2 +1,2 @@
-###  laravel-enso - meilisearch
+###  laravel-enso - meili-search
 Coming soon
