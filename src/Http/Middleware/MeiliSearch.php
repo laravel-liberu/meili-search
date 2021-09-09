@@ -9,7 +9,7 @@ class MeiliSearch
 {
     public function handle($request, Closure $next)
     {
-        Settings::initializeIfEnabled();
+        Settings::initialize();
 
         return $next($request);
     }

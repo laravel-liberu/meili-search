@@ -23,7 +23,8 @@ class Settings extends Model
         'master_key' => Encrypt::class,
     ];
 
-    private static $instance;
+    private static self $instance;
+    private static bool $initialized = false;
 
     public function configured(): bool
     {
@@ -52,12 +53,13 @@ class Settings extends Model
         return self::current()->enabled;
     }
 
-    public static function initializeIfEnabled(): void
+    public static function initialize(): void
     {
-        if (self::enabled()) {
+        if (! self::$initialized && self::enabled()) {
             Config::set('scout.driver', 'meilisearch');
             Config::set('scout.meilisearch.host', self::host());
             Config::set('scout.meilisearch.key', self::masterKey());
+            self::$initialized = true;
         }
     }
 }
