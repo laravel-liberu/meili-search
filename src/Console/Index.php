@@ -18,6 +18,11 @@ class Index extends Command
 
         MeiliSearch::createIndex($model);
 
+        if (method_exists($model, 'filterableAttributes')) {
+            MeiliSearch::index($model)
+                ->updateFilterableAttributes($model::filterableAttributes());
+        }
+
         $this->info("Index for [{$model}] created.");
     }
 }

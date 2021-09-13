@@ -3,7 +3,7 @@
 namespace LaravelEnso\MeiliSearch;
 
 use Illuminate\Support\ServiceProvider;
-use LaravelEnso\MeiliSearch\Console\DeleteIndex;
+use LaravelEnso\MeiliSearch\Console\Delete;
 use LaravelEnso\MeiliSearch\Console\Flush;
 use LaravelEnso\MeiliSearch\Console\Import;
 use LaravelEnso\MeiliSearch\Console\Index;
@@ -18,7 +18,7 @@ class AppServiceProvider extends ServiceProvider
 
         $this->commands([
             Index::class,
-            DeleteIndex::class,
+            Delete::class,
             Flush::class,
             Import::class,
         ]);
