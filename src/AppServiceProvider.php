@@ -7,7 +7,6 @@ use LaravelEnso\MeiliSearch\Console\Delete;
 use LaravelEnso\MeiliSearch\Console\Flush;
 use LaravelEnso\MeiliSearch\Console\Import;
 use LaravelEnso\MeiliSearch\Console\Index;
-use LaravelEnso\MeiliSearch\Http\Middleware\MeiliSearch;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -22,11 +21,5 @@ class AppServiceProvider extends ServiceProvider
             Flush::class,
             Import::class,
         ]);
-    }
-
-    public function register()
-    {
-        $this->app['router']
-            ->aliasMiddleware('meili-search', MeiliSearch::class);
     }
 }

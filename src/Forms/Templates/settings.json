@@ -2,26 +2,8 @@
     "routePrefix": "integrations.meilisearch.settings",
     "sections": [
         {
-            "columns": 2,
+            "columns": 1,
             "fields": [
-                {
-                    "label": "Host",
-                    "name": "host",
-                    "value": "",
-                    "meta": {
-                        "type": "input",
-                        "content": "text"
-                    }
-                },
-                {
-                    "label": "Master Key",
-                    "name": "master_key",
-                    "value": "",
-                    "meta": {
-                        "type": "input",
-                        "content": "encrypt"
-                    }
-                },
                 {
                     "label": "Enabled",
                     "name": "enabled",
