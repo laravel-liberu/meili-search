@@ -12,7 +12,7 @@ class ValidateSettings extends FormRequest
     {
         return [
             'master_key' => ['string', 'nullable', 'max:255', $this->required()],
-            'host' => ['url', 'max:255', $this->required()],
+            'host' => 'url|max:255|required_if:enabled,true',
             'enabled' => 'required|boolean',
         ];
     }
@@ -21,8 +21,7 @@ class ValidateSettings extends FormRequest
     {
         $required = App::isProduction()
             && $this->get('enabled')
-            && (! $this->filled('master_key', 'host')
-                || ! $this->route('settings')->configured());
+            && ! $this->route('settings')->configured();
 
         return Rule::requiredIf($required);
     }
