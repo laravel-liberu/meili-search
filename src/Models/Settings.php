@@ -27,16 +27,6 @@ class Settings extends Model
             ?? self::factory()->create();
     }
 
-    public static function host()
-    {
-        return self::current()->host;
-    }
-
-    public static function masterKey()
-    {
-        return self::current()->master_key;
-    }
-
     public static function enabled()
     {
         return self::current()->enabled;
