@@ -17,23 +17,23 @@ class Index extends Command
     {
         $model = $this->argument('model');
 
-        MeiliSearch::createIndex($model);
+        $index = MeiliSearch::createIndex($model);
 
         try {
             $filterable = $model::filterableAttributes();
-            MeiliSearch::index($model)->updateFilterableAttributes($filterable);
+            $index->updateFilterableAttributes($filterable);
         } catch (Throwable) {
         }
 
         try {
             $sortable = $model::sortableAttributes();
-            MeiliSearch::index($model)->updateSortableAttributes($sortable);
+            $index->updateSortableAttributes($sortable);
         } catch (Throwable) {
         }
 
         try {
             $searchable = $model::searchableAttributes();
-            MeiliSearch::index($model)->updateSearchableAttributes($searchable);
+            $index->updateSearchableAttributes($searchable);
         } catch (Throwable) {
         }
 
