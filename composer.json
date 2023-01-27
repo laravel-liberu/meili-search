@@ -1,33 +1,33 @@
 {
-    "name": "laravel-enso/meili-search",
+    "name": "cgdsoftware/meili-search",
     "type": "library",
     "description": "meilisearch integration",
     "authors": [
         {
             "name": "Adrian Ocneanu",
             "email": "aocneanu@gmail.com",
-            "homepage": "https://laravel-enso.com",
+            "homepage": "https://cgdsoftware.com",
             "role": "Developer"
         },
         {
             "name": "Mihai Ocneanu",
             "email": "mihai.ocneanu@gmail.com",
-            "homepage": "https://laravel-enso.com",
+            "homepage": "https://cgdsoftware.com",
             "role": "Developer"
         },
         {
             "name": "Vlad Chioivanu",
             "email": "vlad.chiovianu@earthlink.ro",
-            "homepage": "https://laravel-enso.com",
+            "homepage": "https://cgdsoftware.com",
             "role": "Developer"
         }
     ],
     "keywords": [],
-    "homepage": "https://www.laravel-enso.com",
+    "homepage": "https://www.cgdsoftware.com",
     "require": {
         "http-interop/http-factory-guzzle": "^1.2",
         "laravel/scout": "^9.2",
-        "laravel-enso/core": "^8.0",
+        "cgdsoftware/core": "^8.0",
         "php": ">=8.0",
         "meilisearch/meilisearch-php": "^0.19"
     },
