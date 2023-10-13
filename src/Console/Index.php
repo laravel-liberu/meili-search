@@ -8,7 +8,7 @@ use Throwable;
 
 class Index extends Command
 {
-    protected $signature = 'enso:meilisearch:index
+    protected $signature = 'liberu:meilisearch:index
         {model : The model for which an index will be created}';
 
     protected $description = 'Create an index';

@@ -7,7 +7,7 @@ use LaravelLiberu\MeiliSearch\Services\MeiliSearch;
 
 class Delete extends Command
 {
-    protected $signature = 'enso:meilisearch:delete
+    protected $signature = 'liberu:meilisearch:delete
         {model : The model for which the index will be deleted}';
 
     protected $description = 'Delete an index';

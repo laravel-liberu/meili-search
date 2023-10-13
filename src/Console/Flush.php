@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 
 class Flush extends Command
 {
-    protected $signature = 'enso:meilisearch:flush {model}';
+    protected $signature = 'liberu:meilisearch:flush {model}';
 
     protected $description = "Flush all of the model's records from the index";
 
