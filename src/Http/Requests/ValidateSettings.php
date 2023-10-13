@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\MeiliSearch\Http\Requests;
+namespace LaravelLiberu\MeiliSearch\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

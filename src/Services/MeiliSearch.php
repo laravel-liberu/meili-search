@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\MeiliSearch\Services;
+namespace LaravelLiberu\MeiliSearch\Services;
 
 use Illuminate\Support\Facades\App;
 use MeiliSearch\Client;

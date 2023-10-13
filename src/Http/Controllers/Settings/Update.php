@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\MeiliSearch\Http\Controllers\Settings;
+namespace LaravelLiberu\MeiliSearch\Http\Controllers\Settings;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\MeiliSearch\Http\Requests\ValidateSettings;
-use LaravelEnso\MeiliSearch\Models\Settings;
+use LaravelLiberu\MeiliSearch\Http\Requests\ValidateSettings;
+use LaravelLiberu\MeiliSearch\Models\Settings;
 
 class Update extends Controller
 {

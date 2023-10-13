@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\MeiliSearch\Http\Controllers\Settings;
+namespace LaravelLiberu\MeiliSearch\Http\Controllers\Settings;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\MeiliSearch\Forms\Builders\Settings as Form;
-use LaravelEnso\MeiliSearch\Models\Settings;
+use LaravelLiberu\MeiliSearch\Forms\Builders\Settings as Form;
+use LaravelLiberu\MeiliSearch\Models\Settings;
 
 class Index extends Controller
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\MeiliSearch\Database\Factories;
+namespace LaravelLiberu\MeiliSearch\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use LaravelEnso\MeiliSearch\Models\Settings as Model;
+use LaravelLiberu\MeiliSearch\Models\Settings as Model;
 
 class SettingsFactory extends Factory
 {

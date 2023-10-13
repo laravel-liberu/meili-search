@@ -33,14 +33,14 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelEnso\\MeiliSearch\\": "src/",
-            "LaravelEnso\\MeiliSearch\\Database\\Factories\\": "database/factories/"
+            "LaravelLiberu\\MeiliSearch\\": "src/",
+            "LaravelLiberu\\MeiliSearch\\Database\\Factories\\": "database/factories/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelEnso\\MeiliSearch\\AppServiceProvider"
+                "LaravelLiberu\\MeiliSearch\\AppServiceProvider"
             ]
         }
     },

@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use LaravelEnso\MeiliSearch\Http\Controllers\Settings\Index;
-use LaravelEnso\MeiliSearch\Http\Controllers\Settings\Update;
+use LaravelLiberu\MeiliSearch\Http\Controllers\Settings\Index;
+use LaravelLiberu\MeiliSearch\Http\Controllers\Settings\Update;
 
 Route::middleware(['api', 'auth', 'core'])
     ->prefix('api/integrations/meilisearch/settings')

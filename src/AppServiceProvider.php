@@ -1,12 +1,12 @@
 <?php
 
-namespace LaravelEnso\MeiliSearch;
+namespace LaravelLiberu\MeiliSearch;
 
 use Illuminate\Support\ServiceProvider;
-use LaravelEnso\MeiliSearch\Console\Delete;
-use LaravelEnso\MeiliSearch\Console\Flush;
-use LaravelEnso\MeiliSearch\Console\Import;
-use LaravelEnso\MeiliSearch\Console\Index;
+use LaravelLiberu\MeiliSearch\Console\Delete;
+use LaravelLiberu\MeiliSearch\Console\Flush;
+use LaravelLiberu\MeiliSearch\Console\Import;
+use LaravelLiberu\MeiliSearch\Console\Index;
 
 class AppServiceProvider extends ServiceProvider
 {

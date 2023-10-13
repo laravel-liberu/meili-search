@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\MeiliSearch\Console;
+namespace LaravelLiberu\MeiliSearch\Console;
 
 use Illuminate\Console\Command;
-use LaravelEnso\MeiliSearch\Services\MeiliSearch;
+use LaravelLiberu\MeiliSearch\Services\MeiliSearch;
 use Throwable;
 
 class Index extends Command

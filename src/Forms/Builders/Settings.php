@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\MeiliSearch\Forms\Builders;
+namespace LaravelLiberu\MeiliSearch\Forms\Builders;
 
-use LaravelEnso\MeiliSearch\Models\Settings as Model;
-use LaravelEnso\Forms\Services\Form;
+use LaravelLiberu\MeiliSearch\Models\Settings as Model;
+use LaravelLiberu\Forms\Services\Form;
 
 class Settings
 {

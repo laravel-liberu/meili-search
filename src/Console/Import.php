@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\MeiliSearch\Console;
+namespace LaravelLiberu\MeiliSearch\Console;
 
 use Illuminate\Console\Command;
 
